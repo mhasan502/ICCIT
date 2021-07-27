@@ -88,6 +88,8 @@ footer {
     color: #1A265C;
     text-transform: uppercase;
     text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 .brand_name_small {
     display: inline-block;
@@ -101,7 +103,7 @@ footer {
     text-decoration: none;
 }
 .logobar {
-    padding: 20px 10px 20px 0;
+    padding: 20px 10px 0 0;
 }
 #eventlogosize {
     width: 100px;
@@ -110,9 +112,10 @@ footer {
     display: inline-block;
     font-family: 'Quicksand', 'Roboto', sans-serif;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
     vertical-align: middle;
-    font-weight: 500;
+    font-weight: 700;
+    margin-top: 15px;
 }
 .brand_slogan_small {
     display: inline-block;
@@ -120,7 +123,7 @@ footer {
     text-transform: uppercase;
     font-size: 15px;
     vertical-align: middle;
-    font-weight: 500;
+    font-weight: 700;
 }
 .date {
     font-family: 'Quicksand', 'Roboto', sans-serif;
@@ -128,6 +131,8 @@ footer {
     vertical-align: middle;
     font-weight: 500;
     color: #1A265C;
+    text-align: inherit !important;
+    margin-bottom: 0;
 }
 .venue {
     font-family: 'Quicksand', 'Roboto', sans-serif;
@@ -137,6 +142,7 @@ footer {
     text-align: inherit !important;
     color: #1A265C;
     text-decoration: none !important;
+    margin-bottom: 10px;
 }
 .non_justified {
     text-align: inherit !important;
@@ -239,6 +245,12 @@ footer {
     text-align: left;
     vertical-align: middle;
 }
+.university_title{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: x-large;
+}
 ul, ol {
     list-style-type: disc;
     line-height: 2.2;
@@ -247,7 +259,6 @@ ul, ol {
     padding-right: 10px;
 }
 .carousel-inner .item {
-    height: 580px;
 }
 #accordion1 li.panel {
     margin-bottom: 0;
@@ -346,4 +357,7 @@ ul, ol {
     #navbar {
         text-align: center;
     }
-}  
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    width: 100%;
+}
