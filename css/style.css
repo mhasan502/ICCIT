@@ -50,7 +50,7 @@ header.carousel .fill {
 }
 /* Footer Styles */
 footer {
-    margin: 50px 0;
+    margin: 30px 0;
 }
 /* Responsive Styles */
 @media (max-width: 991px) {
@@ -207,12 +207,15 @@ footer {
 .side_nav_links {
     text-decoration: none;
     color: #333;
-    line-height: 3;
-    font-size: 13px;
+    line-height: 2;
+    font-size: 14px;
 }
 .side_nav_links:hover {
     text-decoration: none;
-    color: #63b7d7 !important;
+    background: #1a265c;
+    color: #fff !important;
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 .side_nav_links:active {
     text-decoration: none;
@@ -360,4 +363,7 @@ ul, ol {
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     width: 100%;
+}
+.nav>li>a {
+    font-size: 16px;
 }
