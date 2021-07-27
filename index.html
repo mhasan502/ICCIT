@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>ICCIT 2021</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +27,7 @@
     <![endif]-->
 
 </head>
-
+<body>
 <!-- Header Large -->
 <div class="container logobar visible-lg">
 
@@ -57,7 +58,6 @@
     </div>
 </div>
 
-
 <!-- Header Medium -->
 <div class="container logobar visible-md">
     <div class="col-md-1 text-left">
@@ -82,7 +82,6 @@
         <img src="images/nsu-logo-small.png"></a>
     </div>
 </div>
-
 
 <!-- Header Small -->
 <div class="container logobar hidden-md hidden-lg">
@@ -109,7 +108,6 @@
     </div>
 </div>
 
-
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
@@ -127,7 +125,24 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-left">
                 <li class="active">
-                    <a href="#">Home</a>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle disabled"
+                       data-toggle="dropdown">
+                        About <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="./about_iccit.html">About ICCIT</a>
+                        </li>
+                        <li>
+                            <a href="./about_nsu.html">About NSU</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./call_for_paper.html">Call For Paper</a>
                 </li>
 
                 <li class="dropdown">
@@ -135,41 +150,39 @@
                         Paper Submission
                         <b class="caret"></b>
                     </a>
-
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#">Paper Submission Guidelines</a>
+                            <a href="./paper_submission_guidelines.html">Paper Submission Guidelines</a>
                         </li>
 
                         <li>
-                            <a href="#">Important IEEE Policy Announcement</a>
+                            <a>Important IEEE Policy Announcement</a>
                         </li>
 
                         <li>
-                            <a href="#">Camera Ready Paper Submission
-                                Guidelines</a>
+                            <a>Camera Ready Paper Submission Guidelines</a>
                         </li>
                     </ul>
                 </li>
-
                 <li>
-                    <a href="#">Important Dates</a>
+                    <a href="./plagiarism.html">Plagiarism</a>
                 </li>
-
-
                 <li>
-                    <a href="#">Speakers</a>
+                    <a href="./important_dates.html">Important Dates</a>
                 </li>
-
                 <li>
-                    <a href="#">Program</a>
+                    <a href="./registration.html">Registration</a>
                 </li>
-
-
+                <li>
+                    <a>Program</a>
+                </li>
+                <li>
+                    <a>Tutorials</a>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle disabled"
                        data-toggle="dropdown">
-                        Committees <b class="caret"></b>
+                        Committee <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li>
@@ -179,21 +192,14 @@
                             <a href="#">Research Integrity
                                 Committee</a>
                         </li>
-                        <!-- <li>
-                             <a href="#">Advisory Committee</a>
-                         </li>-->
                         <li>
                             <a href="#">Organizing Committee</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">Travel Information</a>
+                <li>
+                    <a href="contact.html">Contact</a>
                 </li>
-                <hr class="menu_sep">
-
-                <hr class="menu_sep">
-
-
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -224,7 +230,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="images/fullSlide-4.jpg">
+                    <img src="images/fullSlide-3.jpg">
                 </div>
 
                 <div class="item">
@@ -249,7 +255,6 @@
 
 <br><br><br>
 
-
 <!-- Page Content -->
 <div class="container">
 
@@ -261,109 +266,116 @@
 
             <ul class="nav nav-stacked side_nav_body" id="accordion1">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <hr class="menu_sep">
                 <li>
-                    <a href="#">About ICCIT</a>
+                    <a href="./about_iccit.html">About ICCIT</a>
                 </li>
                 <hr class="menu_sep">
                 <li>
-                    <a href="#">Award Winners</a>
-                </li>
-
-
-                <hr class="menu_sep">
-                <li>
-                    <a href="#">About NSU</a>
+                    <a href="./about_nsu.html">About NSU</a>
                 </li>
                 <hr class="menu_sep">
                 <li>
-                    <a href="#">Call For Paper</a>
+                    <a>Award Winners (Coming soon)</a>
                 </li>
                 <hr class="menu_sep">
                 <li>
-                    <a href="http://iccit.org.bd/2021/scope.php">Scope</a>
+                    <a href="./call_for_paper.html">Call For Paper</a>
                 </li>
                 <hr class="menu_sep">
                 <li class="panel">
                     <a data-toggle="collapse" data-parent="#accordion1"
-                       href="http://iccit.org.bd/2021/index.php#firstLink">Paper Submission</a>
+                       href="#firstLink">Paper Submission</a>
 
                     <ul id="firstLink" class="collapse">
                         <li>
-                            <a href="#" class="side_nav_links">
+                            <a href="./paper_submission_guidelines.html" class="side_nav_links">
                                 Paper Submission Guidelines
                             </a>
                         </li>
-
                         <li>
-                            <a href="#" class="side_nav_links">Important IEEE
-                                Policy Announcement</a>
+                            <a class="side_nav_links">
+                                Important IEEE Policy Announcement (Coming soon)
+                            </a>
                         </li>
-
                         <li>
-                            <a href="#" class="side_nav_links">Camera
-                                Ready Paper Submission Guidelines</a>
+                            <a class="side_nav_links">
+                                Camera Ready Paper Submission Guidelines (Coming soon)
+                            </a>
                         </li>
-
                     </ul>
-
                 </li>
                 <hr class="menu_sep">
                 <li>
-                    <a href="#" target="_blank">Plagiarism</a>
+                    <a href="./plagiarism.html">Plagiarism</a>
                 </li>
                 <hr class="menu_sep">
                 <li>
-                    <a href="#">Important Dates</a>
+                    <a href="./important_dates.html">Important Dates</a>
                 </li>
                 <hr class="menu_sep">
                 <li>
-                    <a href="#">Registration</a>
+                    <a href="./registration.html">Registration</a>
                 </li>
                 <hr class="menu_sep">
                 <li>
-                    <a href="#">Speakers</a>
-                </li>
-                <hr class="menu_sep">
-                <li><a href="#">Program</a>
+                    <a>Speakers (Coming soon)</a>
                 </li>
                 <hr class="menu_sep">
                 <li>
-                    <a href="#">Tutorials</a>
+                    <a>Program (Coming soon)</a>
+                </li>
+                <hr class="menu_sep">
+                <li>
+                    <a>Tutorials (Coming soon)</a>
                 </li>
                 <hr class="menu_sep">
                 <li class="panel" style="background-color:#fbfbfb">
                     <a data-toggle="collapse" data-parent="#accordion1"
-                       href="http://iccit.org.bd/2021/index.php#secondLink">Committees </a>
+                       href="#secondLink">Committees </a>
 
                     <ul id="secondLink" class="collapse" style="background-color:#fdfdfd">
-                        <li><a href="http://iccit.org.bd/2021/conference_committee.php" class="side_nav_links">Committees</a>
-                        </li>
-                        <li><a href="http://iccit.org.bd/2021/technical_committee.php" class="side_nav_links">Technical
-                            Committee</a></li>
                         <li>
-                            <a href="http://iccit.org.bd/2021/research_integrity_committee.php" class="side_nav_links">
-                                Research Integrity Committee
+                            <a href="./patrons.html" class="side_nav_links">
+                                Patrons
                             </a>
                         </li>
-                        <!-- <li><a href="advisory_committee.php" class="side_nav_links">Advisory Committee</a></li>-->
-                        <li><a href="http://iccit.org.bd/2021/organizing_committee.php" class="side_nav_links">Organizing
-                            Committee</a></li>
+                        <li>
+                            <a href="./technical_committee.html" class="side_nav_links">
+                                Technical Committee
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./organizing_committee.html" class="side_nav_links">
+                                Organizing Committee
+                            </a>
+                        </li>
+                        <li>
+                            <a class="side_nav_links">
+                                Advisory Committee (Coming soon)
+                            </a>
+                        </li>
+                        <li>
+                            <a class="side_nav_links">
+                                Research Integrity Committee (Coming soon)
+                            </a>
+                        </li>
                     </ul>
-                    <hr class="menu_sep">
                 </li>
-                <li><a href="http://iccit.org.bd/2021/travel_information.php">Travel Information</a>
+
+                <hr class="menu_sep">
+                <li>
+                    <a href="./accepted_papers.html">
+                        Accepted Papers
+                    </a>
                 </li>
                 <hr class="menu_sep">
-                <li><a href="http://iccit.org.bd/2021/hotel_information.php">Hotel Information</a>
-                </li>
-                <hr class="menu_sep">
-                <li><a href="http://iccit.org.bd/2021/accepted_papers.php">Accepted Papers</a>
-                </li>
-                <hr class="menu_sep">
-                <li><a href="http://iccit.org.bd/2021/contact.php">Contact</a>
+                <li>
+                    <a href="./contact.html">
+                        Contact
+                    </a>
                 </li>
             </ul>
 
@@ -374,265 +386,44 @@
         <div class="col-md-6">
 
             <h2 class="section_h text-center">Welcome to ICCIT 2021</h2>
-            <p>International Conference on Computer and Information Technology (ICCIT) actually started its journey in
+            <p>
+                International Conference on Computer and Information Technology (ICCIT) actually started its journey in
                 the year 1998. ICCIT has evolved from the National Conference on Computer and Information Systems
                 (NCClS) which was held in 1997 at the Dhaka University, Bangladesh. Since 1998, the conference is being
                 organized every year by different public and private universities.This is the longest running IEEE
-                sponsored peer-reviewed conference in Bangladesh.</p>
+                sponsored peer-reviewed conference in Bangladesh.
+            </p>
 
-            <p>ICCIT 2021 will be held at North South University. All researchers are encouraged to prepare for
-                submissions at ICCIT 2021.</p>
+            <p>
+                ICCIT 2021 will be held at North South University. All researchers are encouraged to prepare for
+                submissions at ICCIT 2021.
+            </p>
 
-            <p>This year's ICCIT is being hosted to provide an unique opportunity for the computer and information
+            <p>
+                This year's ICCIT is being hosted to provide an unique opportunity for the computer and information
                 technology professionals, scientists, engineers, educators, researchers and students from all over the
                 world to exchange their scientific ideas, views and thoughts with fellow researchers and participants.
                 This conference addressed some of the more relevant and state-of-the-art issues and topics involved in
-                computer science and engineering and information technology.</p>
-
-            <hr>
-            <p>
-                <a href="#" class="news_link" target="_blank"><strong>A.</strong> Technical Session Assignment</a>
+                computer science and engineering and information technology.
             </p>
-            <hr>
-            <p>
-                <a href="#" class="news_link" target="_blank"><strong>B.</strong> Program-at-a-Glance</a>
+
+            <p class="text-center" style="font-size: 20px;color: #0076ff">
+                <b>ICCIT 2021 will be conducted virtually.
+                </b>
             </p>
-            <hr>
-            <p>
-                <a href="#" target="_blank"><strong>C.</strong> Agenda of Sessions</a>
+            <p class="text-center" style="font-size: 20px">
+                <b>All accepted and presented papers will be submitted for inclusion in IEEE
+                    Xplore® Digital Library (Pending Approval).
+                </b>
             </p>
-            <hr>
-
-            <br>
-            <p class="heavy_p" style="font-size:17px;color:#18457D;">KEYNOTE SPEAKERS:</p>
-
-            <div class="row" style="padding-top:10px;padding-bottom:10px;margin-left:10px">
-                <div class="col-md-3">
-
-                    <img src="images/speaker_01.jpg" width="95%" height="auto">
-
-                </div>
-
-                <div class="col-md-9" style="padding-left:0">
-
-                    <p class="non_justified"><span class="heavy_p">1. Prof. Nam Ling</span><br>Fellow - IEEE, Fellow -
-                        IET<br>Sanfilippo Family Chair Professor<br>Chair, Department of Computer Engineering<br>Santa
-                        Clara University<br>California, U.S.A<br><br>Title: Applying Machine Learning to Sparse Coding
-                        in Image Compression
-                    </p>
-
-                </div>
-
-            </div>
-            <br>
-            <div class="row" style="background-color: #F2F2F2; padding-top:10px;padding-bottom:10px;margin-left:10px">
-                <div class="col-md-3">
-
-                    <img src="images/speaker_02.jpg" width="95%" height="auto">
-
-                </div>
-
-                <div class="col-md-9" style="padding-left:0">
-
-                    <p class="non_justified"><span class="heavy_p">2. Prof. Timothy K. Shih</span><br> Fellow - IET<br>Distinguished
-                        Professor<br>National Central University, Taiwan<br><Br>Title: Motion Interpretation Via
-                        Human-Computer Interaction</p>
-                </div>
-            </div>
-
-            <br><br>
-            <p class="heavy_p" style="font-size:17px;color:#18457D;">INVITED TALK:</p>
-
-
-            <div class="row" style="padding-top:10px;padding-bottom:10px;margin-left:10px">
-                <div class="col-md-3">
-
-                    <img src="images/speaker_03.jpg" width="95%" height="auto">
-
-                </div>
-
-                <div class="col-md-9" style="padding-left:0">
-
-                    <p class="non_justified">
-                        <span class="heavy_p">1. Dr. Nurul I. Sarkar</span>
-                        <br>
-                        Auckland University of Technology
-                        <br>
-                        New Zealand
-                        <br><br>
-                        <b>Title:</b> Factors Influencing the Performance of Wireless Local Area Networks
-                    </p>
-
-                </div>
-
-            </div>
-
-            <br>
-
-            <div class="row" style="background-color: #F2F2F2; padding-top:10px;padding-bottom:10px;margin-left:10px">
-                <div class="col-md-3">
-
-                    <img src="images/dr_m_mr_chy.jpg" width="95%" height="auto">
-
-                </div>
-
-                <div class="col-md-9" style="padding-left:0">
-
-                    <p class="non_justified">
-                        <span class="heavy_p">2. Dr. Mohammad M. R. Chowdhury</span>
-                        <br>
-                        Senior Engineer, Cyber Security & Infrastructure
-                        <br>
-                        Advanced Services & Products
-                        <br>
-                        Process Automation – Oil, Gas & Chemicals, ABB AS
-                        <br>
-                        Oslo, NORWAY
-                        <br><br>
-                        <b>Title:</b> Cyber Security for Critical Infrastructure
-                    </p>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="row" style="padding-top:10px;padding-bottom:10px;margin-left:10px">
-                <div class="col-md-3">
-
-                    <img src="images/speaker_04.jpg" width="95%" height="auto">
-
-                </div>
-
-                <div class="col-md-9" style="padding-left:0">
-
-                    <p class="non_justified">
-                        <span class="heavy_p">3. Dr. Atif Hasan Rahman</span>
-                        <br>
-                        Department of Computer Science and Engineering
-                        <br>
-                        Bangladesh University of Engineering and Technology
-                        <br>
-                        Dhaka, Bangladesh:
-                        <br><br>
-                        <b>Title:</b> Statistical methods for genome assembly
-                    </p>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="row" style="background-color: #F2F2F2; padding-top:10px;padding-bottom:10px;margin-left:10px">
-                <div class="col-md-3">
-
-                    <img src="images/speaker_05.jpg" width="95%" height="auto">
-
-                </div>
-
-                <div class="col-md-9" style="padding-left:0">
-
-                    <p class="non_justified">
-                        <span class="heavy_p">4. Dr. Shamsi T. Iqbal</span>
-                        <br>
-                        Microsoft Research
-                        <br>
-                        Redmond, WA, USA
-                        <br><br>
-                        <b>Title:</b> Designing Attention Aware Technology, Dr. Shamsi T. Iqbal, Microsoft
-
-                        Research, Redmond, WA, USA
-                    </p>
-                </div>
-            </div>
-
-            <br><br>
-
-
-            <p class="heavy_p" style="font-size:17px;color:#18457D;">INDUSTRY TALK:</p>
-
-
-            <div class="row" style="padding-top:10px;padding-bottom:10px;margin-left:10px">
-                <div class="col-md-3">
-
-                    <img src="images/speaker_06.jpg" width="95%" height="auto">
-
-                </div>
-
-                <div class="col-md-9" style="padding-left:0">
-
-                    <p class="non_justified">
-                        <span class="heavy_p">1. Mr. Saif Saifullah</span>
-                        <br>
-                        CEO, SinePulse GmbH,Germany
-                        <br>
-                        CEO, AplombTech BD Ltd
-                        <br><br>
-                        <b>Title:</b> IoT, Machine Learning, AI and beyond
-                    </p>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="row" style="background-color: #F2F2F2; padding-top:10px;padding-bottom:10px;margin-left:10px">
-                <div class="col-md-3">
-                    <img src="images/speaker_07.jpg" width="95%" height="auto">
-                </div>
-
-                <div class="col-md-9" style="padding-left:0">
-
-                    <p class="non_justified">
-                        <span class="heavy_p">2. Mr. Ashiqul Islam Akhand</span>
-                        <br>
-                        Senior Project Manager | Enterprise Architect | Process Consultant
-                        <br>
-                        DataSoft Systems Bangladesh Limited (a CMMI DevLevel 5 company)
-                        <br><br>
-                        <b>Title:</b> Sustainable Business Growth by Improving Software Engineering Processes
-                    </p>
-                </div>
-            </div>
-
-            <br><br>
-
-            <p class="heavy_p" style="font-size:17px;color:#18457D;">PANEL DISCUSSION:</p>
-
-            <p>
-            <ol>
-                <li style="font-size: 18px; font-weight: 600;">Panel on “ABET Accreditation for Engineering and
-                    Computing Programs in
-
-                    Bangladesh – Prospects and Challenges”
-                </li>
-                <br>
-
-                <strong>Panel Moderator:</strong> Dr. Jamilur Reza Choudhury, Chairman, BAETE
-
-                <strong>Members:</strong>
-                <ul>
-                    <li>Dr. Mohammad S. Alam, Texas A&amp;M University – Kingsville</li>
-                    <li>Dr. Muhammad H. Rashid, University of West Florida</li>
-                    <li>Dr. Rezwan Khan, North South Universit</li>
-                    <li>Dr. Anisul Haque, East West University, Member BAETE</li>
-                </ul>
-
-                <br>
-
-                <li style="font-size: 18px; font-weight: 600;">Panel on “Cyber Security in the Context of Bangladesh”
-                </li>
-                <br>
-                <strong>Panel Moderator:</strong> Dr. Mohammad S. Alam, Texas A&amp;M University-Kingsville, USA
-                <strong>Members:</strong>
-                <ul>
-                    <li>Dr. Afzal Hossain, President, Nanova Corporation, California, USA</li>
-                    <li>Dr. Mohammad Mahfuzul Islam, Bangladesh Computer Society and BUET</li>
-                    <li>Dr. Syed Rahman, Mankato State University, USA</li>
-                    <li>Dr. Ambreen Siraj, Tennessee Tech University</li>
-                    <li>Dr. Mohammad Hafiz Abdur Rahman, North South University</li>
-                    <li>Commodore M. N. Absar NGP, NDC, PSC, BN, Director, National Security Intelligence</li>
-                </ul>
-                <br>
-            </ol>
+            <br><br><br>
+            <p class="text-center" style="font-size: 20px">TECHNICAL CO-SPONSOR</p>
+            <p class="text-center">
+                <a class="text-center" href="http://www.ieee.org.bd/">
+                    <img src="images/IEEE_LOGO.png">
+                </a>
             </p>
+            <p class="text-center" style="color: red; font-size: medium; margin-bottom: 5px">(Pending Approval)</p>
         </div>
 
         <div class="col-md-3">
@@ -641,69 +432,11 @@
             </div>
 
             <div class="side_panel_body text-center">
-                <p style="font-size: medium;">All accepted and presented papers will be submitted for inclusion in IEEE
-                    Xplore® Digital Library.</p>
-                <p class="text-center" style="color: red; font-size: medium; margin-bottom: 5px">(Pending Approval)</p>
+                <a href="files/ICCIT_CFP_2021.pdf">Call for Paper</a>
+                <p style="font-size: medium;"></p>
+
 
             </div>
-            <div class="side_panel_top text-center">
-                Conference General Chairs
-            </div>
-            <div class="side_panel_body">
-
-                <div class="row" style="margin-bottom:10px;">
-                    <div class="col-md-6" style="padding-right:0;">
-                        <img src="ICCIT_files/prof_m_a_karim.png" width="94%" height="auto">
-                    </div>
-                    <div class="col-md-6"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="non_justified_type_2"><span class="heavy_p">Dr. Mohammad A. Karim </span><br>Fellow -
-                            IEEE, IET, OSA, SPIE, IoP<br>
-                            Provost and Chief Operating Officer<br>
-                            University of Massachusetts, Dartmouth, USA
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row" style="margin-bottom:10px;">
-                    <div class="col-md-6" style="padding-right:0;">
-                        <img src="ICCIT_files/prof_m_s_alam.png" width="94%" height="auto">
-                    </div>
-                    <div class="col-md-6"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="non_justified_type_2"><span class="heavy_p">Dr. Mohammad S. Alam</span><br>Fellow -
-                            IEEE, IET, OSA, SPIE, IoP, IS&amp;T<br>
-                            Professor and Dean<br>
-                            Frank H. Dotterweich College of Engineering<br>
-                            Texas A&amp;M University, Kingsville, USA
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="side_panel_top text-center">
-                TECHNICAL CO-SPONSOR
-            </div>
-            <div class="side_panel_body text-center">
-                <a href="http://www.ieee.org.bd/"><img src="ICCIT_files/ieeebds.png" width="175px"></a>
-                <p class="text-center" style="color: red; font-size: medium; margin-bottom: 5px">(Pending Approval)</p>
-            </div>
-            <!--
-                        <div class="side_panel_top text-center">
-                            ICCIT Project Showcase Competition
-                        </div>
-
-                        <div class="side_panel_body text-center">
-                            <div class="row">
-                            <div class="col-md-6"><a href="#" target="_blank"><img src="images/fb_event.png" width="50px"> <br> Sign up on Facebook</a></div>
-                            <div class="col-md-6"><a href="#" target="_blank"><img src="images/google_event.png" width="50px"> <br> Sign up on Google</a></div>
-                            </div>
-                        </div>-->
-
             <div class="side_panel_top text-center">
                 IMPORTANT DATES
             </div>
@@ -766,6 +499,44 @@
                     </tbody>
                 </table>
             </div>
+            <div class="side_panel_top text-center">
+                Conference General Chairs
+            </div>
+            <div class="side_panel_body">
+
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-6" style="padding-right:0;">
+                        <img src="images/prof_m_a_karim.png" width="94%" height="auto">
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="non_justified_type_2"><span class="heavy_p">Dr. Mohammad A. Karim </span><br>Fellow -
+                            IEEE, IET, OSA, SPIE, IoP<br>
+                            Provost and Chief Operating Officer<br>
+                            University of Massachusetts, Dartmouth, USA
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-6" style="padding-right:0;">
+                        <img src="images/prof_m_s_alam.png" width="94%" height="auto">
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="non_justified_type_2"><span class="heavy_p">Dr. Mohammad S. Alam</span><br>Fellow -
+                            IEEE, IET, OSA, SPIE, IoP, IS&amp;T<br>
+                            Professor and Dean<br>
+                            Frank H. Dotterweich College of Engineering<br>
+                            Texas A&amp;M University, Kingsville, USA
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -781,130 +552,7 @@
 
 
 <br><br>
-<!--
-<div class="container-fluid" style="background-color:#FBFBFB">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <br>
-                <h2 class="page-header text-center">Keynote Speakers</h2>
-                <br>
-            </div>
-            <div class="col-md-4 col-sm-8">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                                        <span class="fa-stack fa-5x">
-                                            <img src="images/dummy_speaker_1.png" width="125px">
-                                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>ABC</h4>
-                        <p class="non_justified">XYZ<br>Some Institution</p>
-                        <a href="#" class="btn btn-primary">Abstract</a>
-                        <a href="#" class="btn btn-primary">Biography</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-8">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                                        <span class="fa-stack fa-5x">
-                                            <img src="images/dummy_speaker_3.png" width="125px">
-                                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>ABC</h4>
-                        <p class="non_justified">XYZ<br>Some Institution</p>
-                        <a href="#" class="btn btn-primary">Abstract</a>
-                        <a href="#" class="btn btn-primary">Biography</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-8">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                                        <span class="fa-stack fa-5x">
-                                            <img src="images/dummy_speaker_2.png" width="125px">
-                                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>ABC</h4>
-                        <p class="non_justified">XYZ<br>Some Institution</p>
-                        <a href="#" class="btn btn-primary">Abstract</a>
-                        <a href="#" class="btn btn-primary">Biography</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <br><br><br>
-
-
-    </div>
-</div>
-
-
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <br>
-                <h2 class="page-header text-center">Invited Speakers</h2>
-                <br>
-            </div>
-            <div class="col-md-4 col-sm-8">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                                        <span class="fa-stack fa-5x">
-                                            <img src="images/dummy_speaker_3.png" width="125px">
-                                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>ABC</h4>
-                        <p class="non_justified">XYZ<br>Some Institution</p>
-                        <a href="#" class="btn btn-primary">Abstract</a>
-                        <a href="#" class="btn btn-primary">Biography</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-8">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                                        <span class="fa-stack fa-5x">
-                                            <img src="images/dummy_speaker_1.png" width="125px">
-                                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>ABC</h4>
-                        <p class="non_justified">XYZ<br>Some Institution</p>
-                        <a href="#" class="btn btn-primary">Abstract</a>
-                        <a href="#" class="btn btn-primary">Biography</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-8">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                                        <span class="fa-stack fa-5x">
-                                            <img src="images/dummy_speaker_2.png" width="125px">
-                                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>ABC</h4>
-                        <p class="non_justified">XYZ<br>Some Institution</p>
-                        <a href="#" class="btn btn-primary">Abstract</a>
-                        <a href="#" class="btn btn-primary">Biography</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <br><br><br>
-
-
-    </div>
-</div>
--->
+<!-- Footer -->
 <div class="container-fluid" style="background-color: #1a265c;">
     <div class="container">
         <footer>
@@ -919,9 +567,9 @@
                     Contact: +880-2-55668200, Ext-1526
                 </p>
             </div>
-<!--            <div class="col-lg-5 text-right">-->
-<!--                <img src="ICCIT_files/IEEE.png" style="width: 300px; height: 107px">-->
-<!--            </div>-->
+            <div class="col-lg-5 text-right">
+                <img src="images/IEEE.png" style="width: 260px; height: 107px">
+            </div>
             <!--            <div class="row">-->
             <!--                <div class="col-lg-6 text-right">-->
             <!--                    <p class="footer_text" style="color: white;">Hosted By-->
@@ -934,7 +582,6 @@
 
     </div>
 </div>
-<!-- /.container -->
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
@@ -955,6 +602,5 @@
 
 
 </script>
-
 </body>
 </html>
