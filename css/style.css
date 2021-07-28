@@ -105,7 +105,7 @@ footer {
 .logobar {
     padding: 20px 10px 0 0;
 }
-#eventlogosize {
+.eventlogosize {
     width: 120px;
 }
 .brand_slogan {
@@ -385,4 +385,14 @@ ul, ol {
 .ieee_logo {
     width: 180px;
     height: 80px;
+}
+
+.justify-content-between{
+    justify-content:space-between!important
+}
+
+@media (min-width: 1200px) {
+    .cosponsor {
+        margin-left: 60%;
+    }
 }

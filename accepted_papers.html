@@ -33,7 +33,7 @@
 
     <div class="col-md-1 text-left">
         <a href="#">
-            <img id="eventlogosize" src="images/iccit.png">
+            <img class="eventlogosize" src="images/iccit.png">
         </a>
     </div>
 
@@ -62,7 +62,7 @@
 <div class="container logobar visible-md">
     <div class="col-md-1 text-left">
         <a href="http://iccit.org.bd/2021/index.html">
-            <img src="images/iccit.png">
+            <img class="eventlogosize" src="images/iccit.png">
         </a>
     </div>
     <div class="col-md-6 text-left" style="padding-left:25px;padding-top:10px">
@@ -87,7 +87,7 @@
 <div class="container logobar hidden-md hidden-lg">
     <div class="col-md-1 text-center">
         <a href="http://iccit.org.bd/2021/index.html">
-            <img src="images/iccit.png" style="padding-right:5px">
+            <img class="eventlogosize" src="images/iccit.png" style="padding-right:5px">
         </a>
         <a href="http://www.northsouth.edu/" target="_blank">
             <img src="images/nsu-logo-small.png" style="padding-left:5px">
@@ -128,8 +128,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle disabled"
-                       data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         About <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -180,33 +179,33 @@
                     <a>Tutorials</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle disabled"
-                       data-toggle="dropdown">
-                        Committee <b class="caret"></b>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Committee
+                        <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="patrons.html" class="side_nav_links">
+                            <a href="patrons.html">
                                 Patrons
                             </a>
                         </li>
                         <li>
-                            <a href="technical_committee.html" class="side_nav_links">
+                            <a href="technical_committee.html">
                                 Technical Committee
                             </a>
                         </li>
                         <li>
-                            <a href="organizing_committee.html" class="side_nav_links">
+                            <a href="organizing_committee.html">
                                 Organizing Committee
                             </a>
                         </li>
                         <li>
-                            <a class="side_nav_links">
+                            <a>
                                 Advisory Committee
                             </a>
                         </li>
                         <li>
-                            <a class="side_nav_links">
+                            <a>
                                 Research Integrity Committee
                             </a>
                         </li>
@@ -539,10 +538,10 @@
 <div class="container-fluid" style="background-color: #1a265c;">
     <div class="container">
         <footer>
-            <div class="col-md-1"><a href="http://www.northsouth.edu/" target="_blank">
+            <div class="col-lg-1"><a href="http://www.northsouth.edu/" target="_blank">
                 <img src="images/nsu-logo-small.png"></a>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 justify-content-between">
                 <p class="footer_text" style="color: white;font-size: 16px">
                     North South University
                     <br>
@@ -550,17 +549,24 @@
                     <br>
                     Bashundhara, Dhaka-1229, Bangladesh
                     <br>
-                    Phone: +880-2-55668200   |    Fax: +880-2-55668202
+                    Phone: +880-2-55668200 | Fax: +880-2-55668202
                     <br>
                 </p>
             </div>
-            <div class="col-lg-5 text-right">
-                <p class="text-right" style="color: #fff;margin-bottom: 5px;font-size: 16px">Technical Co-Sponsor</p>
-                <img class="ieee_logo" src="images/IEEE.png">
-                <p class="text-right" style="color: #fff;margin-bottom: 5px;font-size: 16px">(Pending Approval)</p>
+            <div class="col-lg-5 justify-content-between">
+                <div class="cosponsor">
+                    <p style="color: #fff;margin-bottom: 5px;font-size: 16px">
+                        Technical Co-Sponsor
+                    </p>
+                    <img class="ieee_logo" src="images/IEEE.png">
+                    <p style="color: #fff;margin-bottom: 5px;font-size: 16px">
+                        (Pending Approval)
+                    </p>
+                </div>
             </div>
 
-            <div class="col-md-12 text-center" style="background:#070f33 ;width: 100%; color: white; padding-top: 5px; padding-bottom: 5px">
+            <div class="col-md-12 text-center"
+                 style="background:#070f33 ;width: 100%; color: white; padding-top: 5px; padding-bottom: 5px">
                 © Copyright ICCIT 2021. All Rights Reserved.
             </div>
         </footer>
