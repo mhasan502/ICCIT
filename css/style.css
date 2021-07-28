@@ -106,7 +106,7 @@ footer {
     padding: 20px 10px 0 0;
 }
 #eventlogosize {
-    width: 100px;
+    width: 120px;
 }
 .brand_slogan {
     display: inline-block;
@@ -380,4 +380,9 @@ ul, ol {
 
 .committee .sub-committee {
     margin-left: 25px;
+}
+
+.ieee_logo {
+    width: 180px;
+    height: 80px;
 }
