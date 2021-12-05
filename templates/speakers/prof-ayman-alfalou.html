@@ -1,0 +1,60 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Prof. Ayman Alfalou
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/AymanAlfalou.png' %}" style="width: 60%">
+            </div>
+            <br><br>
+            <div>
+                <p>
+                    <b>Title: </b>
+                    Smart and autonomous systems for underwater image processing and simultaneous compression and encryption schemes
+                </p>
+                <p>
+                    <b>Abstract: </b>
+                    L@bISEN was created at the end of the 1990s as the research laboratory of ISEN Yncréa Ouest, a then young private non-profit engineering school based
+                    in Brest. From the very beginning, L@bISEN has been developed around the idea of industry-oriented research, reaching 34 members in 2015. As a result
+                    of the remarkable expansion of Yncréa Ouest in three other campuses, L@bISEN reorganized its research activities as a multi-site research unit with
+                    smart and autonomous systems as its common research project based on three major topics: sensors, data analysis and energy management. This
+                    environment was essential for carrying out multiple research activities leading up to academic publications, PhD theses, research partnerships, joint
+                    industrial laboratories, and patents. For the past ten years, the guiding thread of Prof. Ayman Alfalou’s research consists of combining the best of
+                    optical and numerical methods applied to image processing. Optical methods offer simple and implementable filtering possibilities, provide fast and
+                    highly parallelizable solutions, which allows efficient image preprocessing before the application of adaptable numerical methods. This combination
+                    ensures fast image processing while reducing numerical complexity, easing the implementation of real embedded systems. In this presentation, we will
+                    focus on two research activities illustrating the interest of building up interactions between sensors, data analysis and energy management:
+                </p>
+                <ol>
+                    <li>
+                        Optical underwater image processing for autonomous underwater vehicles (patent FR1763336);
+                    </li>
+                    <li>
+                        Privacy-preserving simultaneous compression and encryption schemes for security applications (patent FR3088752).
+                    </li>
+                </ol>
+                <p>
+                    <b>Biography: </b>
+                    Ayman Alfalou is head of Research and Innovaation at Yncréa Ouest and head of the L@bISEN research laboratory (Brest, Caen, Nantes and Rennes). His
+                    main research interests are signal and image processing, telecommunications, optical systems, optical processing, opto-electronics, laser and
+                    polarization. He supervises PhD and master students in a wide variety of theoretical and experimental topics. To date, he has published over 216
+                    refereed journal or conference articles. He has organized or co-organized many conferences, special sessions and was the chairman or a member of
+                    scientific committees of many international conferences. He is a senior member of OSA, IEEE and SPIE.
+                </p>
+            </div>
+        </div>
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}

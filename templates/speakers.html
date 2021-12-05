@@ -1,0 +1,125 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Keynote Address
+            </div>
+            <br>
+
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/JieWu.png' %}" style="width: 60%">
+            </div>
+            <br>
+
+            <div>
+                <p class="text-center">
+                    <a href="{% url 'prof-jie-wu' %}">
+                        <b style="font-size: 18px;color: #1A265C"> Prof. Jie Wu </b>
+                    </a>
+                    <br>
+                    Fellow - IEEE, AAAS <br>
+                    Temple University, USA
+                </p>
+            </div>
+            <br>
+
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/MohsenGuizani.jpg' %}" style="width: 60%">
+            </div>
+            <br>
+            <div>
+                <p class="text-center">
+                    <a href="{% url 'prof-mohsen-guizani' %}">
+                        <b style="font-size: 18px;color: #1A265C"> Prof. Mohsen Guizani </b>
+                    </a>
+                    <br>
+                    Fellow - IEEE
+                </p>
+            </div>
+            <br>
+
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/MohammedAtiquzzaman.jpg' %}" style="width: 60%">
+            </div>
+            <br>
+            <div>
+                <p class="text-center">
+                    <a href="{% url 'mohammed-atiquzzaman' %}">
+                        <b style="font-size: 18px;color: #1A265C"> Mohammed Atiquzzaman</b>
+                    </a>
+                    <br>
+                    Edith J. Kinney Gaylord Presidential Professor, School of Computer Science<br>
+                    University of Oklahoma, Norman, OK 73019
+                </p>
+            </div>
+
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/ThomasLu.png' %}" style="width: 60%">
+            </div>
+            <br>
+            <div>
+                <p class="text-center">
+                    <a href="{% url 'dr-thomas-lu' %}">
+                        <b style="font-size: 18px;color: #1A265C">Dr. Thomas Lu</b>
+                    </a>
+                    <br>
+                    NASA/Jet Propulsion Lab<br>
+                    California Institute of Technology
+                </p>
+            </div>
+
+            <div class="side_panel_top text-center">
+                Invited Talk
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/AymanAlfalou.png' %}" style="width: 60%">
+            </div>
+            <br>
+            <div>
+                <p class="text-center">
+                    <a href="{% url 'prof-ayman-alfalou' %}">
+                        <b style="font-size: 18px;color: #1A265C"> Prof. Ayman Alfalou </b>
+                    </a>
+                    <br>
+                    Head of the Research at Yncréa Ouest – ISEN <br>
+                    France
+                </p>
+            </div>
+            <br>
+
+            <div class="side_panel_top text-center">
+                Invited Session I
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/VijayanAsari.png' %}" style="width: 60%">
+            </div>
+            <br>
+            <div>
+                <p class="text-center">
+                    <a href="{% url 'vijayan-k-asari' %}">
+                        <b style="font-size: 18px;color: #1A265C"> Vijayan K. Asari</b>
+                    </a>
+                    <br>
+                    Professor in Electrical and Computer Engineering <br>
+                    Ohio Research Scholars Endowed Chair in Wide Area Surveillance <br>
+                    University of Dayton, Dayton, OH 45469, USA
+                </p>
+            </div>
+
+        </div>
+
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}

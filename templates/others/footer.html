@@ -1,0 +1,59 @@
+{% load static %}
+<br><br>
+<!-- Footer -->
+<div class="container-fluid" style="background-color: #1a265c;">
+    <div class="container">
+        <footer>
+            <div class="col-lg-1"><a href="http://www.northsouth.edu/" target="_blank">
+                <img src="{% static 'images/nsu-logo-small.png' %}"></a>
+            </div>
+            <div class="col-lg-6 justify-content-between">
+                <p class="footer_text" style="color: white;font-size: 16px">
+                    North South University
+                    <br>
+                    <img style="width: 300px" src="{% static 'images/slogan.png' %}">
+                    <br>
+                    Bashundhara, Dhaka-1229, Bangladesh
+                    <br>
+                    Phone: +880-2-55668200 | Fax: +880-2-55668202
+                    <br>
+                </p>
+            </div>
+            <div class="col-lg-5 justify-content-between">
+                <div class="cosponsor">
+                    <p style="color: #fff;margin-bottom: 5px;font-size: 16px">
+                        Technical Co-Sponsor
+                    </p>
+                    <img class="ieee_logo" src="{% static 'images/IEEE.png' %}">
+<!--                    <p style="color: #fff;margin-bottom: 5px;font-size: 16px">
+                        (Pending Approval)
+                    </p>-->
+                </div>
+            </div>
+
+            <div class="col-lg-12 text-center"
+                 style="background:#070f33 ;width: 100%; color: white; padding-top: 5px; padding-bottom: 5px; border-radius: 5px">
+                © Copyright ICCIT 2021. All Rights Reserved.
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="{% static 'js/jquery.js' %}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+<!-- Script to Activate the Carousel -->
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    });
+
+    $('#LogoCarousel').carousel({
+        interval: 2000
+    });
+
+</script>

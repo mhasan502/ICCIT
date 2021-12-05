@@ -1,0 +1,37 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Dr. Ishtiaque Ahmed
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/IshtiaqueAhmed.jpg' %}" style="width: 60%">
+            </div>
+            <br><br>
+            <div>
+                <p>
+                    <b>Biography: </b>
+                    Syed Ishtiaque Ahmed is an Assistant Professor of Computer Science at the University of Toronto, and the Director of the ‘Third Space'' research
+                    group. His research focuses on the design challenges around strengthening the ‘voices’ or marginalized communities around the world. He conducted
+                    ethnography and built technologies with many underprivileged communities in Bangladesh, India, Pakistan, Iran, Iraq, Turkey, China, Canada, and the
+                    US. Ishtiaque received his PhD and Masters from Cornell University in the USA, and his Bachelor from BUET in Bangladesh. He received the International
+                    Fulbright Science and Technology Fellowship, Fulbright Centennial Fellowship, and Schwartz Reisman Institute Fellowship among others. His research has
+                    been funded by all three branches of Canadian tri-council research (NSERC, CIHR, SSHRC), NSF, NIH, Google, Microsoft, Facebook, Intel, Samsung, the
+                    World Bank, UNICEF, and UNDP, among others.
+                </p>
+            </div>
+        </div>
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}

@@ -1,0 +1,56 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Prof. Jie Wu
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/JieWu.png' %}" style="width: 60%">
+            </div>
+            <br><br>
+            <div>
+                <p>
+                    <b>Title: </b>
+                    On Partitioning and Scheduling of DNNs in Mobile Edge/Cloud Computing
+                </p>
+                <p>
+                    <b>Abstract: </b>
+                    As Deep Neural Networks (DNNs) have been widely used in various applications, including computer vision on image segmentation and recognition, it is
+                    important to reduce the makespan of DNN computation, especially when running on mobile devices. Offloading is a viable solution that offloads
+                    computation from a slow mobile device to a fast, but remote edge/cloud. As DNN computation consists of a multiple-stage processing pipeline, it is
+                    critical to decide on what stage should offloading occur to minimize the makespan. Our observations show that the local computation time on a mobile
+                    device follows a linear increasing function, while the offloading time on a mobile device is monotonic decreasing and follows a convex curve as more
+                    DNN layers are computed in the mobile device. Based on this observation, we first study the optimal partition and scheduling for one line-structure
+                    DNN. Then, we extend the result to multiple line-structure DNNs. Heuristic results for general-structure DNNs, represented by Directed Acyclic Graphs
+                    (DAGs), are also discussed based on a path-based scheduling policy. Our proposed solutions are validated via testbed implementation.
+                </p>
+                <p>
+                    <b>Biography: </b>
+                    Jie Wu is the Director of the Center for Networked Computing and Laura H. Carnell Professor at Temple University. He also serves as the Director of
+                    International Affairs at College of Science and Technology. He served as Chair of Department of Computer and Information Sciences from the summer of
+                    2009 to the summer of 2016 and Associate Vice Provost for International Affairs from the fall of 2015 to the summer of 2017. Prior to joining Temple
+                    University, he was a program director at the National Science Foundation and was a distinguished professor at Florida Atlantic University. His current
+                    research interests include mobile computing and wireless networks, routing protocols, cloud and green computing, network trust and security, and
+                    social network applications. Dr. Wu regularly publishes in scholarly journals, conference proceedings, and books. He serves on several editorial
+                    boards, including IEEE Transactions on Mobile Computing, IEEE Transactions on Service Computing, Journal of Parallel and Distributed Computing, and
+                    Journal of Computer Science and Technology. Dr. Wu was general co-chair for IEEE MASS 2006, IEEE IPDPS 2008, IEEE ICDCS 2013, ACM MobiHoc 2014, ICPP
+                    2016, IEEE CNS 2016, and WiOpt 2021 as well as program cochair for IEEE INFOCOM 2011, CCF CNCC 2013, and ICCCN 2020. He was an IEEE Computer Society
+                    Distinguished Visitor, ACM Distinguished Speaker, and chair for the IEEE Technical Committee on Distributed Processing (TCDP). Dr. Wu is a Fellow of
+                    the AAAS and a Fellow of the IEEE. He is the recipient of the 2011 China Computer Federation (CCF) Overseas Outstanding Achievement Award.
+                </p>
+            </div>
+        </div>
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}

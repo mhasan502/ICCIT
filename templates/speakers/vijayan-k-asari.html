@@ -1,0 +1,56 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Vijayan K. Asari
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/VijayanAsari.png' %}" style="width: 60%">
+            </div>
+            <br><br>
+            <div>
+                <p>
+                    <b>Title: </b>
+                    A Semi-Supervised Learning Framework for Image Data Annotation
+                </p>
+                <p>
+                    <b>Abstract: </b>
+                    Automatic image annotation has been an active research topic in recent years due to the surge of deep learning and its impact on visual perception
+                    applications for scene-understanding and autonomous systems. Deep-learning based automatic target recognition algorithms demand the requirement of a
+                    large amount of precisely annotated data for robust training and performance evaluation. We propose a semi-supervised deep-learning framework for
+                    automated data annotation based on a single-shot object detection algorithm. Our data labeling model employs a pre-trained object detection algorithm
+                    that could predict the locations of the objects in the images. It automatically creates bounding boxes around the object regions and marks their
+                    respective object labels. The annotation tool provides accessibility to finetune the object bounding boxes as needed. The object detection method is
+                    invariant to object sizes, object orientations, lighting conditions and camera poses. Our data annotation system has the capability to retrain itself
+                    for capturing information of unfamiliar or new objects for further labeling. It can perform real-time labeling of data captured by the sensors in
+                    mobile platforms.
+                </p>
+
+                <p>
+                    <b>Biography: </b>
+                    Vijayan K. Asari is a Professor of electrical and computer engineering and the Ohio Research Scholars Endowed Chair in wide area surveillance with the
+                    University of Dayton. He is also the Director of the University of Dayton Vision Lab, a center of excellence for computational intelligence and
+                    machine vision. He received the Ph.D. degree in electrical engineering from the Indian Institute of Technology, Madras, in 1994. Dr. Asari has so far
+                    supervised 30 Doctoral dissertations and 45 Masters theses, and published more than 700 research articles, including an edited book on wide area
+                    surveillance and 118 peer-reviewed journal articles in the areas of image processing, computer vision, pattern recognition, machine learning, deep
+                    learning, and artificial neural networks. He received several awards for teaching, research, advising and technical leadership that include the
+                    University of Dayton Vision Award for Excellence in August 2017, the Sigma Xi George B. Noland Award for Outstanding Research in April 2016, and the
+                    Outstanding Engineers and Scientists Award for Technical Leadership from The Affiliate Societies Council of Dayton in April 2015. He is a senior
+                    member of IEEE and an elected Fellow of SPIE, and a co-organizer of several IEEE and SPIE conferences and workshops.
+                </p>
+            </div>
+        </div>
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}

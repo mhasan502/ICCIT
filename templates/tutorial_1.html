@@ -1,0 +1,71 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Tutorial 1
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/SheikhIqbalAhamed.jpg' %}" style="width: 60%">
+            </div>
+            <br>
+            <div>
+                <p class="text-center">
+                    <a href="{% url 'dr-sheikh-iqbal-ahamed' %}">
+                        <b style="font-size: 18px;color: #1A265C">Dr. Sheikh Iqbal Ahamed</b>
+                    </a>
+                    <br>
+                    Professor & Chair, Department of Computer Science<br>
+                    Marquette University, WI, USA
+                    <br>
+                    <a href="http://www.mscs.mu.edu/~iq/" target="_blank">
+                        Personal Webpage
+                    </a>
+                </p>
+            </div>
+            <br><br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/IshtiaqueAhmed.jpg' %}" style="width: 60%">
+            </div>
+            <br>
+            <div>
+                <p class="text-center">
+                    <a href="{% url 'dr-ishtiaque_ahmed' %}">
+                        <b style="font-size: 18px;color: #1A265C">Dr. Ishtiaque Ahmed</b>
+                    </a>
+                    <br>
+                    Assistant Professor, Department of Computer Science<br>
+                    University of Toronto, Ontario, Canada
+                    <br>
+                    <a href="https://www.ishtiaque.net/" target="_blank">
+                        Personal Webpage
+                    </a>
+                </p>
+            </div>
+
+            <br>
+            <div>
+                <p>
+                    <b>Topic: </b>Writing Strategies for the Researchers: From Grad School Application to Grant Application
+                </p>
+                <p>
+                    <b>Abstract: </b>
+                    In this seminar, we will discuss different important strategies, techniques, and rules for writing successful documents related to graduate
+                    admissions, scholarships/fellowships, and grant applications.
+                </p>
+            </div>
+        </div>
+
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}

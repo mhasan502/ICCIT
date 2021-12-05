@@ -1,0 +1,160 @@
+{% load static %}
+<!-- Sidebar Column -->
+<div class="col-md-3 visible-lg visible-md">
+
+    <ul class="nav nav-stacked side_nav_body" id="accordion1">
+        <li>
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <hr class="menu_sep">
+        <li>
+            <a href="{% url 'about_iccit' %}">About ICCIT</a>
+        </li>
+        <hr class="menu_sep">
+        <li>
+            <a href="{% url 'about_nsu' %}">About NSU</a>
+        </li>
+        <hr class="menu_sep">
+        <li>
+            <a href="{% url 'best_paper_award' %}">Best Paper Award</a>
+        </li>
+        <hr class="menu_sep">
+        <li>
+            <a href="{% url 'call_for_paper' %}">Call For Paper</a>
+        </li>
+        <hr class="menu_sep">
+        <li class="panel">
+            <a data-toggle="collapse" data-parent="#accordion1"
+               href="#submission_menu">Paper Submission</a>
+
+            <ul id="submission_menu" class="collapse">
+                <li>
+                    <a href="{% url 'paper_submission_guidelines' %}" class="side_nav_links">
+                        Paper Submission Guidelines
+                    </a>
+                </li>
+                <li>
+                    <a class="side_nav_links">
+                        Important IEEE Policy Announcement (Coming soon)
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'camera_ready_paper_submission_guidelines' %}" class="side_nav_links">
+                        Camera Ready Paper Submission Guidelines
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <hr class="menu_sep">
+        <li>
+            <a href="{% url 'plagiarism' %}">Plagiarism</a>
+        </li>
+        <hr class="menu_sep">
+        <li>
+            <a href="{% url 'important_dates' %}">Important Dates</a>
+        </li>
+        <hr class="menu_sep">
+        <li>
+            <a href="{% url 'registration' %}">Registration</a>
+        </li>
+        <hr class="menu_sep">
+        <li>
+            <a href="{% url 'publications' %}">
+                Publications
+            </a>
+        </li>
+        <hr class="menu_sep">
+        <li>
+            <a href="{% url 'speakers' %}">
+                Speakers
+            </a>
+        </li>
+        <hr class="menu_sep">
+        <li class="panel" style="background-color:#fbfbfb">
+            <a data-toggle="collapse" data-parent="#accordion1"
+               href="#program_menu">Program</a>
+
+            <ul id="program_menu" class="collapse" style="background-color:#fdfdfd">
+                <li>
+                    <a class="side_nav_links" href="{% static 'files/ICCIT_Technical_Session_V2.pdf' %}" target="_blank">
+                        Technical Program Schedule
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <hr class="menu_sep">
+        <li class="panel" style="background-color:#fbfbfb">
+            <a data-toggle="collapse" data-parent="#accordion1"
+               href="#workshop_menu">Workshop &amp; Tutorial</a>
+
+            <ul id="workshop_menu" class="collapse" style="background-color:#fdfdfd">
+                <li>
+                    <a class="side_nav_links" href="{% url 'workshop_1' %}">
+                        Workshop 1
+                    </a>
+                </li>
+                <li>
+                    <a class="side_nav_links" href="{% url 'workshop_2' %}">
+                        Workshop 2
+                    </a>
+                </li>
+                <li>
+                    <a class="side_nav_links" href="{% url 'tutorial_1' %}">
+                        Tutorial 1
+                    </a>
+                </li>
+                <li>
+                    <a class="side_nav_links" href="{% url 'tutorial_2' %}">
+                        Tutorial 2
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <hr class="menu_sep">
+        <li class="panel" style="background-color:#fbfbfb">
+            <a data-toggle="collapse" data-parent="#accordion1"
+               href="#committee_menu">Committees </a>
+
+            <ul id="committee_menu" class="collapse" style="background-color:#fdfdfd">
+                <li>
+                    <a href="{% url 'patrons' %}" class="side_nav_links">
+                        Patrons
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'technical_committee' %}" class="side_nav_links">
+                        Technical Committee
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'organizing_committee' %}" class="side_nav_links">
+                        Organizing Committee
+                    </a>
+                </li>
+                <li>
+                    <a class="side_nav_links">
+                        Advisory Committee (Coming soon)
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'research_integrity_committee' %}" class="side_nav_links">
+                        Research Integrity Committee
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <hr class="menu_sep">
+        <li>
+            <a href="{% static 'files/ICCIT2021_Accepted_Papers.pdf' %}" target="_blank">
+                Accepted Papers
+            </a>
+        </li>
+        <hr class="menu_sep">
+        <li>
+            <a href="{% url 'contact' %}">
+                Contact
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,51 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Dr. Thomas Lu
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/ThomasLu.png' %}" style="width: 60%">
+            </div>
+            <br><br>
+            <div>
+                <p>
+                    <b>Title: </b>
+                    An Explainable AI Assistant for First Responder Driver Safety
+                </p>
+                <p>
+                    <b>Abstract: </b>
+                    Fatalities caused by emergency responder vehicle collisions in the United States are 4.8 times higher than the national average. In this keynote
+                    presentation, an AI Assistant - Trusted and exPlainable Artificial Intelligence for Saving Lives (TruePAL) is presented. The TruePAL project was
+                    created as a result of U.S. Congressional Appropriations to study the technologies for saving first responders and roadside crews lives in and around
+                    active traffic. TruePAL provides real-time warning of risks that can be understood by a human driver. TruePAL analyzes data from multiple sources,
+                    performs reasoning and inferences, and provides the driver real-time prioritized action recommendations. TruePAL is capable of learning traffic
+                    history, analyzing the environment, using AI reasoning and applying traffic rules to generate timely warning to the drivers and roadside crews to
+                    avoid crashes. The TruePAL system has successfully demonstrated its capability of generating timely warning in over a dozen simulated traffic
+                    scenarios in busy intersections and roadsides. The preliminary test results have shown that TruePAL provides the drivers and crew members precious 3-7
+                    seconds advanced warnings before a crash occurs.
+                </p>
+                <p>
+                    <b>Biography: </b>
+                    Dr. Thomas Lu is a Senior Researcher at NASA Jet Propulsion Laboratory, California Institute of Technology. His research focus has been in data
+                    analysis, artificial intelligence (AI), neural network architectures, deep learning, multispectral imaging, sensing and computer vision areas. He
+                    received JPL NASA Honor, Discovery, Voyager and Marina Awards for Innovations. He has served as an organizer and organizing committee member of SPIE
+                    conferences, edited a book on “Advancement in Patten Recognition Research”, contributed 3 book chapters, co-authored over 70 journal and conference
+                    papers, co-invented 6 patents. Dr. Lu received his Ph.D. degree in Electrical Engineering from the Pennsylvania State University.
+                </p>
+            </div>
+        </div>
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}

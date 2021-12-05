@@ -1,0 +1,52 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Workshop 2
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/AnjaniPhuyal.jpg' %}" style="width: 60%">
+            </div>
+            <br>
+            <div>
+                <p class="text-center">
+                    <a href="{% url 'anjani-phuyal' %}">
+                        <b style="font-size: 18px;color: #1A265C">Mr. Anjani Phuyal</b>
+                    </a>
+                    <br>
+                    Global CTO of Genese Solution<br>
+                    London, England
+                    <br>
+                    <a href="https://www.anjani.co.uk/" target="_blank">
+                        Personal Webpage
+                    </a>
+                </p>
+            </div>
+            <br>
+            <div>
+                <p>
+                    <b>Topic: </b>Machine Learning on AWS cloud
+                </p>
+                <p>
+                    <b>Abstract: </b>
+                    AWS offers the broadest and deepest set of machine learning services and supports cloud infrastructure, putting machine learning in the hands of every
+                    developer, data scientist, and expert practitioner. AWS is helping more than one hundred thousand customers accelerate their machine learning journey.
+                    The session will help beginners start on their AI/ML journey and help professionals to get expertise.
+                </p>
+            </div>
+        </div>
+
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}

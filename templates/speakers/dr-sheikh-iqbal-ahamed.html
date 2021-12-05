@@ -1,0 +1,40 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Dr. Sheikh Iqbal Ahamed
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/SheikhIqbalAhamed.jpg' %}" style="width: 60%">
+            </div>
+            <br><br>
+            <div>
+                <p>
+                    <b>Biography: </b>
+                    Sheikh Iqbal Ahamed is a professor of Computer Science and director of Ubicomp lab at Marquette University, USA. He is the founding chair of the
+                    department of computer science at Marquette University. He is also the President of Ubitrix. He is a senior member of the IEEE, ACM, and the IEEE
+                    Computer Society. He completed his Ph.D. in Computer Science from Arizona State University, USA in 2003. His research interests include mHealth,
+                    affective computing, non-intrusive technologies. He is active in system and application development of mHealth projects for Native American, Hispanic
+                    communities, Veterans and other underserved populations like Nepal, Bangladesh. He has graduated 17 PhD students and 52 MS students. Currently he has
+                    4 NIH, 2 NIDILRR and 1 NSF grants as PI and Co-PI. He has successfully completed 25 research grants He has published 200+ peer reviewed journal,
+                    conference and workshop papers. He has received twelve best paper/posters awards in last five years. Dr. Ahamed serves regularly on international
+                    conference program committees in software engineering and pervasive computing such as COMPSAC, PERCOM and SAC . He has been serving as the Standing
+                    Committee Vice Chair of IEEE COMPSAC, which is a since 2015. He is the general chair of IEEE Digital Health 2022. He is the Guest Editor of Computer
+                    Communications Journal, Elsevier.
+                </p>
+            </div>
+        </div>
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}

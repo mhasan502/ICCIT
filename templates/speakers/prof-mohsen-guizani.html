@@ -1,0 +1,65 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Prof. Mohsen Guizani
+            </div>
+            <br>
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/MohsenGuizani.jpg' %}" style="width: 60%">
+            </div>
+            <br><br>
+            <div>
+                <p>
+                    <b>Title: </b>
+                    Machine Learning Use in Internet of Things (IoT) Applications
+                </p>
+                <p>
+                    <b>Abstract: </b>
+                    As the Internet-of-Things devices are being widely adopted in all fields, such as smart houses, healthcare, and transportation, large amounts of data
+                    are being collected, shared, and processed. This fact raises many challenges on how to make the best use of this huge amount of data to improve the
+                    IoT systems’ security using artificial intelligence, taking into consideration the resource limitations in IoT devices and issues regarding data
+                    privacy. Different techniques have been studied and developed throughout the years. For example, Federated Learning (FL), which is an emerging
+                    learning technique that is very well known for preserving and respecting the privacy of the collaborating clients’ data during model training. The
+                    concepts of FL and Hierarchical Federated Learning (HFL) are evaluated and compared with respect of detection accuracy and speed of convergence,
+                    through simulating an Intrusion Detection System for Internet-of-Things applications. Different kinds of datasets (e.g., NSL-KDD) are used in our work
+                    to prove that our developed schemes are superior compared to other schemes in terms of training loss, testing accuracy, and speed of convergence. HFL
+                    also showed its efficiency over FL in reducing the effect of the non-identically and independently distributed data on the collaborative learning
+                    process.
+                    <br><br>
+                    In this Keynote, we review the current efforts by experts around the world to mitigate some of these challenges. Then, we showcase our research
+                    activities to contribute to these efforts and advocate possible solutions using AI and other tools. We provide ways on how to manage the available
+                    resources intelligently and efficiently in order to offer better conditions and provide improved services. Finally, we discuss some of our research
+                    results to support a variety of applications including how to secure these devices for successful healthcare service delivery in different aspects.
+                </p>
+
+                <p>
+                    <b>Biography: </b>
+                    Mohsen Guizani received the B.S. (with distinction), M.S. and Ph.D. degrees in Electrical and Computer engineering from Syracuse University, New York,
+                    USA. He is currently a Professor at the Computer Science & Engineering Department in Qatar University. Previously, he worked in different institutions
+                    including University of Idaho, Western Michigan University, University of West Florida, University of Missouri-Kansas City, University of Colorado
+                    -Boulder, and Syracuse University. His research interests include wireless communications and mobile computing, applied machine learning, cloud
+                    computing, security and its application to healthcare systems. He was elevated to the IEEE Fellow in 2009. He was listed as a Clarivate Analytics
+                    Highly Cited Researcher in Computer Science in 2019 and 2020. Dr. Guizani has won several research awards including the “2015 IEEE Communications
+                    Society Best Survey Paper Award” as well 4 Best Paper Awards from ICC and Globecom Conferences. He is the author of nine books and more than 800
+                    publications. He is also the recipient of the 2017 IEEE Communications Society Wireless Technical Committee (WTC) Recognition Award, the 2018 AdHoc
+                    Technical Committee Recognition Award, and the 2019 IEEE Communications and Information Security Technical Recognition (CISTC) Award. He served as the
+                    Editor-in-Chief of IEEE Network and currently serves on the Editorial Boards of many IEEE journals/Transactions. He was the Chair of the IEEE
+                    Communications Society Wireless Technical Committee and the Chair of the TAOS Technical Committee. He served as the IEEE Computer Society
+                    Distinguished Speaker and is currently the IEEE ComSoc Distinguished Lecturer.
+                </p>
+            </div>
+        </div>
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}

@@ -1,0 +1,57 @@
+{% load static %}
+{% include 'others/header.html' %}
+<!-- Page Content -->
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+
+        <!-- Content Column -->
+        <div class="col-md-6">
+            <h2 class="section_h text-center">Welcome to ICCIT 2021</h2>
+            <p>
+                International Conference on Computer and Information Technology (ICCIT) actually started its journey in
+                the year 1998. ICCIT has evolved from the National Conference on Computer and Information Systems
+                (NCClS) which was held in 1997 at the Dhaka University, Bangladesh. Since 1998, the conference is being
+                organized every year by different public and private universities. This is the longest running IEEE
+                sponsored peer-reviewed conference in Bangladesh.
+            </p>
+            <p>
+                ICCIT 2021 will be held at North South University, organized by The Department of Electrical and Computer Engineering.
+                All researchers are encouraged to prepare for submissions at ICCIT 2021.
+            </p>
+            <p>
+                This year's ICCIT is being hosted to provide a unique opportunity for the computer and information
+                technology professionals, scientists, engineers, educators, researchers and students from all over the
+                world to exchange their scientific ideas, views and thoughts with fellow researchers and participants.
+                This conference addresses state-of-the-art issues and topics related to computer science and engineering
+                and information technology.
+            </p>
+            <p class="text-center" style="font-size: 20px;color: #0076ff">
+                <b>ICCIT 2021 will be conducted virtually.
+                </b>
+            </p>
+            <p class="text-center" style="font-size: 20px">
+                <b>All accepted and presented papers will be submitted for inclusion in IEEE Xplore® Digital Library (IEEE Conference Record #54785).
+                </b>
+            </p>
+            <br><br><br>
+            <p class="text-center" style="font-size: 20px">TECHNICAL CO-SPONSOR</p>
+            <p class="text-center">
+                <a class="text-center" href="http://www.ieeebd.net/" target="_blank">
+                    <img style="width: 35%" src="{% static 'images/IEEE_LOGO.png' %}">
+                </a>
+            </p>
+<!--            <p class="text-center" style="color: red; font-size: medium; margin-bottom: 5px">
+                (Pending Approval)
+            </p>-->
+        </div>
+
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+
+{% include 'others/footer.html' %}

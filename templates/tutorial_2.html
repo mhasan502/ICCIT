@@ -1,0 +1,47 @@
+{% load static %}
+{% include 'others/header.html' %}
+<div class="container">
+
+    <!-- /.row -->
+    <!-- Content Row -->
+    <div class="row">
+
+        {% include 'others/left_sidebar.html' %}
+        <!-- Content Column -->
+        <div class="col-md-6">
+
+            <div class="side_panel_top text-center">
+                Tutorial 2
+            </div>
+            <br>
+
+            <div class="col-md-0 text-center" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+                <img class="img-rounded" src="{% static 'images/speakers/SwagatamDas.jpg' %}" style="width: 60%">
+            </div>
+            <br>
+            <div>
+                <p class="text-center">
+                    <a href="{% url 'prof-swagatam-das' %}">
+                        <b style="font-size: 18px;color: #1A265C">Prof. Swagatam Das</b>
+                    </a>
+                    <br>
+                    Associate Professor and Head, Electronics and Communication Sciences Unit<br>
+                    Indian Statistical Institute, West Bengal, India
+                    <br>
+                    <a href="https://www.isical.ac.in/~swagatam.das/" target="_blank">
+                        Personal Webpage
+                    </a>
+                </p>
+            </div>
+            <br>
+            <div>
+                <p>
+                    <b>Topic: </b>Deep Generative Machine Learning and Some Applications
+                </p>
+            </div>
+        </div>
+
+        {% include 'others/right_sidebar.html' %}
+    </div>
+</div>
+{% include 'others/footer.html' %}
