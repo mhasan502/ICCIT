@@ -1,5 +1,11 @@
+from django.contrib.sitemaps.views import sitemap
 from django.urls import path
+from .sitemaps import Sitemap
 from .views import *
+
+sitemaps = {
+    'static': Sitemap,
+}
 
 urlpatterns = [
     path('', Index.as_view(), name='index'),
@@ -24,6 +30,7 @@ urlpatterns = [
     path('workshop_2.html', Workshop_2.as_view(), name='workshop_2'),
     path('tutorial_1.html', Tutorial_1.as_view(), name='tutorial_1'),
     path('tutorial_2.html', Tutorial_2.as_view(), name='tutorial_2'),
+    path('sponsor.html', Sponsor.as_view(), name='sponsor'),
 
     # Speakers
     path('anjani-phuyal.html', Anjani_Phuyal.as_view(), name='anjani-phuyal'),
@@ -39,4 +46,6 @@ urlpatterns = [
     path('vijayan-k-asari.html', Vijayan_K_Asari.as_view(), name='vijayan-k-asari'),
 
     path('robots.txt', Robots.as_view(), name='robots'),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
+         name='django.contrib.sitemaps.views.sitemap'),
 ]

@@ -101,6 +101,9 @@ class Mohammed_Atiquzzaman(TemplateView):
 class Dr_Thomas_Lu(TemplateView):
     template_name = 'speakers/dr-thomas-lu.html'
 
+class Sponsor(TemplateView):
+    template_name = 'sponsor.html'
+
 
 class Robots(TemplateView):
     template_name = 'robots.txt'
